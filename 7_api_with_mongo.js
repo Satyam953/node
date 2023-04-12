@@ -45,4 +45,6 @@ resp.send(data);
 });
 
 
-app.listen(4200);
+app.listen(dataconst.PORT,()=>{
+    console.log("server running on prot "+dataconst.dburl+dataconst.PORT);
+})

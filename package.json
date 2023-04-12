@@ -2,10 +2,10 @@
   "name": "notes",
   "version": "1.0.0",
   "description": "node project hello",
-  "main": "index0.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node 11_1_apiFileUpload.js",
-    "dev": "nodemon --delay 500ms app.js",
+    "start": "node app.js",
+    "dev": "nodemon --delay 500ms 7_api_with_mongo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

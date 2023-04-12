@@ -3,14 +3,14 @@ const data = require('./data/data');
 const dataconst = require('./data/const');
 const client =new  MongoClient(dataconst.dburl);
 
-async function connectDbAndGetCollection(cname){
-let result = await client.connect();
-let db = result.db(dataconst.dbname);
+  async function connectDbAndGetCollection(cname){
+      let result = await client.connect();
+      let db = result.db(dataconst.dbname);
 
-return db.collection(cname);
-  // let response = await collections.find({}).toArray();
-// console.log(response);
-}
+      return db.collection(cname);
+        // let response = await collections.find({}).toArray();
+      // console.log(response);
+  }
 
 
 //Promis pending
