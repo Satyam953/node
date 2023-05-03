@@ -3,6 +3,7 @@
 //call stack : our main 
 //node api : will exicute after all the stack will be empty
 
+    
 console.log('First');
 
 
@@ -20,7 +21,7 @@ setTimeout(()=>{
 },1000);
 
 
-setTimeout(()=>{
+global.setTimeout(()=>{
     console.log('fifth');
 },3000);
 
@@ -31,3 +32,10 @@ setTimeout(()=>{
 
 
 console.log('last')
+
+
+//GLobal
+    // global, document,window,    __dirname    __filename
+
+    console.log(__dirname);//dir path
+    console.log(__filename); 

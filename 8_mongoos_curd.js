@@ -1,11 +1,12 @@
 
 const dataconst = require('./data/const');
 const ProductModel = require('./schema/product');
-const {mongoosConnect,mongoosDisconnect} = require('./services/mongoos_services');
+const {mongoosConnect} = require('./services/mongoos_services');
 
 async function create(querry){
     // let _status = await mongoosConnect();
-    // console.log(_status);
+    console.log(_status);
+    console.log(dataconst);
     let data = new ProductModel(
         querry
     );
@@ -15,9 +16,6 @@ async function create(querry){
     return result;
 }
 
-
-
-
 async function readAll(querry){
     // let _status = await mongoosConnect();
     let data = await ProductModel.find(querry);
@@ -25,6 +23,7 @@ async function readAll(querry){
     // mongoosDisconnect();
 return data; 
 }
+
 async function readOne(req){
     // let _status = await mongoosConnect();
     let data = await ProductModel.findOne(req);

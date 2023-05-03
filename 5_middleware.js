@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-app.listen(4200);
+
 //Middleware are 2 type 
 //1st way App Lavel  middleware (Applies globaly)
 //The only difference is how they are bound
@@ -42,3 +42,6 @@ const route = express.Router();
 
 
 
+    app.listen(4200, () =>
+    console.log(`App is running on port:${4200}`)
+);

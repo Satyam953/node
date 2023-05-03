@@ -7,4 +7,6 @@ app.get('/help',(req,res)=>{res.send('Help Desk')});
 app.get('/about',(req,res)=>{res.send('Welcome, about us')});
 app.get('*',(req,res)=>{res.send('Page Not found')});
 
-app.listen(4200);
+app.listen(4200, () =>
+    console.log(`App is running on port:${4200}`)
+);

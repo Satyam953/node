@@ -1,6 +1,7 @@
 const dburl = 'mongodb://localhost:27017';
-const dbname = 'hellloworld';
-const coll_helloworld = 'thunderbolt_apis';
+const dbname = 'NOde Project';
+const table_product = 'Products';
 const PORT=4200;
-
-module.exports={dburl,dbname,coll_helloworld,PORT}
+const ERROR404='Page not found';
+const ERR502='Internal Server Error please connect to Admin'
+module.exports={dburl,dbname,table_product,PORT}
