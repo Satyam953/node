@@ -1,6 +1,6 @@
 const express = require('express');
 const ProductModel = require('./schema/product');
-const productcontroller = require('./8_mongoos_curd');
+const productcontroller = `require('./8_mongoos_curd');1`
 const {mongoosConnect,mongoosDisconnect}= require('./services/mongoos_services');
 const app = express();
 
